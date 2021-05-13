@@ -1,0 +1,54 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+form{
+  margin-bottom: 0;
+}
+
+
+
+.section-title {
+  @include font($ff, 48px, 700, #000);
+  line-height: 59px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+
+
+.btn-orange {
+  width: 100%;
+  background: linear-gradient(116.88deg, #fe3326 -4.28%, #f26e0e 112.69%),
+    #59aaf1;
+  box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+  border-radius: 3px;
+  @include font($ff, 12px, 600, #fff);
+  line-height: 17px;
+  padding: 8px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: transparent;
+    border-color: #fe3326;
+    color: #fe3326;
+    background: #fff;
+
+  }
+
+  i{
+    margin-left: 20px;
+  }
+}
+

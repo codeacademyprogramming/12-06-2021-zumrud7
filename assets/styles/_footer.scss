@@ -1,0 +1,29 @@
+footer{
+    padding: 35px 0;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: 991.98px){
+            flex-direction: column;
+        }
+    }
+
+    .logo{
+        margin: 0 10px;
+
+        @media(max-width: 991.98px){
+            margin: 25px 0;
+        }
+    }
+   
+    p{
+        @include font($ff, 16px, 400, #000);
+
+        span{
+            font-weight: 700;
+        }
+    }
+}
