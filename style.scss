@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import "./assets/styles/mixins";
+@import "./assets/styles/header";
+@import "./assets/styles/footer";
+@import "./assets/styles/index";
+
+@import "./assets/styles/intro";
+@import "./assets/styles/product-list";
+@import "./assets/styles/query";
+
+
+button{
+    &:focus{
+        outline: none;
+    }
+}

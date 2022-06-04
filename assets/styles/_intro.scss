@@ -1,0 +1,65 @@
+#intro {
+    //   min-height: 100vh;
+    padding-top: 200px;
+    position: relative;
+  
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 110px);
+      background: #f0f5fb;
+      z-index: -1;
+    }
+  
+    .pattern-icon {
+      position: absolute;
+      &.vegetable {
+        width: 100%;
+        height: calc(100% - 300px);
+        top: 135px;
+        left: 0;
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      &.bg {
+        width: calc(100% - 60px);
+        height: calc(100% - 240px);
+        left: 30px;
+        top: 50px;
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  
+    .section-title {
+      padding-bottom: 18px;
+      background: #f0f5fb;
+    }
+  
+    .subtitle {
+      @include font($ff, 18px, 400, #000);
+      line-height: 25px;
+      text-align: center;
+      background: #f0f5fb;
+    }
+  
+    .photo {
+      width: 100%;
+  
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }

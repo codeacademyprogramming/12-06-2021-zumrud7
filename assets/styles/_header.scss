@@ -1,0 +1,114 @@
+header{
+    padding: 25px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p{
+      margin-bottom: 0;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 991.98px){
+        display: none;
+    }
+
+    .nav-link{
+        font-family: "Montserrat";
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        padding: 0;
+        margin-right: 40px;
+
+        @media(max-width: 1200px){
+            margin-right: 20px;
+        }
+    }
+
+  }
+
+  .logo{
+      width: 112px;
+      
+      img{
+          width: 100%;
+          object-fit: contain;
+      }
+  }
+
+  .contact{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      @media(max-width: 991.98px){
+          display: none;
+      }
+
+      .opening-hours{
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        position: relative;
+
+        &:before{
+            content:'';
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            border-radius: 100%;
+            width: 4px;
+            height: 4px;
+            background: #46CB72;
+            left: -10px;
+        }
+      }
+
+      .phone{
+          display: flex;
+          align-items: center;
+          margin-left: 40px;
+
+          @media(max-width: 1200px){
+            margin-left: 20px;
+        }
+
+          .icon{
+            background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+            box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+            border-radius: 100%;
+            width: 33px;
+            height: 33px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          p{
+            font-family: 'Montserrat';
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000;
+            margin-left: 16px;
+          }
+      }
+  }
+
+  .ham-menu{
+      @media(min-width: 991.98px){
+          display: none;
+      }
+  }
+}
